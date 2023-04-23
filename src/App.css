@@ -1,38 +1,150 @@
 .App {
-  text-align: center;
+  position: relative;
+  background: #fff;
+  max-width: 900px;
+  width: 100%;
+  margin: 120px auto;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  margin-top: 30px;
+}
+.myNewtodo{
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  padding: 5px 10px;
+  border: none;
+  color: #fff;
+  margin-left: 5px;
+  margin:0;
+  font-size: 20px;
+  outline: none;
+  background-color: #230903;
+  cursor: pointer;
+  border-radius: 3px;
+  opacity: 0.6;
+  transition: all 0.3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.myhead{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.myheading{
+  font-size: 50px;
+  font-weight: 600;
+  color: #230903;
+}
+.taskBg{
+  margin-bottom: 20px;
+  display: flex;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 26px;
+  padding: 5px 140px 5px 10px;
+  transition: all 0.3s ease;
+}
+.mydatetime{
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.myinput{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 32px;
+  padding-left: 15px;
+  margin-right:15px;
+  transition: all 0.3s ease;
+}
+.myinput:focus{
+  border-color: #D3B88C;
+}
+.mybtn{
+  width: 50px;
+  height: 100%;
+  border: none;
+  color: #fff;
+  margin-left: 5px;
+  margin:0;
+  font-size: 30px;
+  outline: none;
+  background-color: #230903;
+  cursor: pointer;
+  border-radius: 3px;
+  opacity: 0.6;
+  /* pointer-events: none; */
+  transition: all 0.3s ease;
+}
+.mybtn:hover{
+  background-color: #b57c6f;
+}
+.mybox{
+  border: 2px solid whitesmoke;
+}
+.taskNumber{
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 22px;
+  padding:0 10px;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  font-size: 28px;
+  margin-right: 26px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.taskBg .done .taskText{
+  text-decoration: line-through;
+  opacity: 0.3;
+  color:rgb(167, 29, 29);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.taskBg .iconsWrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: auto;
+  display: inline-block;
+}
+.taskBg .iconsWrap span {
+  display: inline-block;
+  margin: 0px 10px 0px 10px;
+  cursor: pointer;
+  /* color: #230903; */
+}
+.taskBg .iconsWrap .tick {
+  padding: 6px 11px;
+  color: #fff;
+  background-color: rgb(17, 165, 17);
+}
+.taskBg .iconsWrap .edit {
+  padding: 6px 11px;
+  color: #fff;
+  background-color: #fad82a;
+}
+.taskBg .iconsWrap .trash {
+  padding: 6px 14px;
+  color: #fff;
+  background-color: rgb(206, 26, 26);
+}
+.taskBg .iconsWrap span:hover{
+  opacity: 0.3;
+}
+.mr{
+  margin-right: 20px;
+}
+.bottomdiv{
+  position: relative;
+  /* bottom: 2px; */
+  left: 600px;
+  margin-bottom: 10px;
 }
